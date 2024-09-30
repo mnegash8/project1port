@@ -1,0 +1,304 @@
+/* General styles for the entire website */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Apple system font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-color: #A2CFFE; /* China Blue background */
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.cta-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Team highlight section */
+.team-highlight {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.team-highlight h3 {
+    color: #333;
+}
+
+.team-highlight ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-highlight ul li {
+    margin: 10px 0;
+}
+
+/* Features section */
+.features {
+    margin: 40px;
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.feature-item h4 {
+    color: #A2CFFE; /* Updated to match the China Blue theme */
+}
+
+/* Team page */
+.team {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.team h2 {
+    color: #A2CFFE;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.team-bubble {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.team-bubble:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-bubble h2 {
+    color: #A2CFFE;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.team-bubble p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Project description section */
+.project-description {
+    background-color: #f9f9f9; /* Light background for readability */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-description h2 {
+    color: #A2CFFE; /* Use the China Blue theme */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-description p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Process Page Specific Styles */
+.process-overview {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.process-overview h2 {
+    color: #A2CFFE; /* China Blue color */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.process-step {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for each step */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.process-step h3 {
+    color: #A2CFFE; /* Theme matching color */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Video page */
+/* Video section layout */
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.video-container {
+    flex: 2; /* Video takes up 2/3 of the width */
+}
+
+.video-description {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+}
+
+.video-description h2 {
+    color: #A2CFFE; /* Match the theme */
+    text-align: center; /* Center the heading */
+}
+
+.video-description p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: center; /* Center the paragraph */
+}
+
+/* Fix for the "ATL Food Finder" title to look like regular text */
+.nav h1 a {
+    color: white; /* Set the title color to white */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold; /* Ensure it stays bold */
+}
+
+.nav h1 a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+    color: white; /* Ensure the hover color remains the same */
+}
+
+/* Paragraph bubbles */
+.paragraph-bubble {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.paragraph-bubble p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 0;
+    color: #333;
+}
+
+/* Optional hover effect for bubbles */
+.paragraph-bubble:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}

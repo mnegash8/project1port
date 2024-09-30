@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATL Food Finder - Project</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the updated CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav">
+            <h1><a href="index.html" class="logo">ATL Food Finder</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <h2>ATL Food Finder Project Overview</h2>
+        
+        <div class="paragraph-bubble">
+            <p>The ATL Food Finder project was built using Django, integrating both backend and frontend components, along with a Google Maps API for location-based features.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>The first step in this project was setting up the Django environment, where manage.py served as the primary script for managing the project, such as running the development server and applying migrations. In the ATLFoodFinder/settings.py file, essential project configurations were made, including database settings (SQLite), middleware, installed apps, and templates.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>The backend structure revolved around defining the core database models in finder/models.py, where restaurant-related data like name, cuisine type, and location were structured. These models mapped directly to the database, and migrations were generated and applied to reflect changes in the schema. The database changes were handled using Django's migration system, ensuring seamless updates.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>For handling user requests and rendering pages, the team implemented logic in finder/views.py, which included views to manage restaurant listings, search functionalities, and map rendering. Each view interacted with the models to retrieve and process data before sending it to the frontend. The URL routing in finder/urls.py mapped these views to specific URLs, allowing users to access different parts of the website, such as restaurant searches and map-based pages.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>The project also integrated Google Maps for displaying restaurant locations on an interactive map. This was done through the maps.html and maps_Index.html templates, which embedded the Google Maps API. The functionality was enhanced using script.js, which managed dynamic elements like plotting restaurants on the map based on the data received from the backend. The styles.css ensured the proper styling and responsiveness of these pages.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>On the frontend, the finder/templates directory contained HTML templates for different views, such as search pages, result listings, and restaurant details. These templates used Django’s templating engine to dynamically display data retrieved from the backend. The finder/static folder housed all the CSS, JavaScript, and image files required for a smooth user experience, ensuring the UI was engaging and functional.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>Restaurant data handling was managed using Resteraunts/DatabaseSearch.py, which processed user search queries and returned filtered results from the database. database.py handled direct interactions with the database, likely fetching or updating records related to restaurants.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>In terms of project management and data entry, finder/admin.py allowed restaurant models to be registered with Django's admin site, enabling easy addition, editing, and deletion of restaurant data through a web interface.</p>
+        </div>
+        
+        <div class="paragraph-bubble">
+            <p>Finally, testing was implemented in finder/tests.py, ensuring that all views and features worked as expected. The SQLite database db.sqlite3 stored all data, including restaurant details and user information, and served as the primary database for development. This setup allowed the team to efficiently manage data, integrate location-based services, and provide a rich user experience.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ATL Food Finder Team</p>
+    </footer>
+
+</body>
+</html>

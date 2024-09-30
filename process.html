@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATL Food Finder - Process</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the updated CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav">
+            <h1><a href="index.html" class="logo">ATL Food Finder</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Process Section with dynamic bubbles -->
+    <section class="process-overview">
+        <h2>Development Process Overview</h2>
+
+        <div class="process-step bubble">
+            <h3>SCRUM Methodology</h3>
+            <p>The ATL Food Finder project followed the SCRUM methodology to ensure iterative development and continuous improvement. During sprint planning, the team broke down user stories like "searching restaurants by cuisine" into tasks, such as building models in <code>models.py</code>, setting up views in <code>views.py</code>, and configuring URLs in <code>urls.py</code>.</p>
+        </div>
+
+        <div class="process-step bubble">
+            <h3>Daily Standups and Sprints</h3>
+            <p>Daily standups helped track progress, resolve blockers, and keep the team aligned, whether working on database models or integrating Google Maps with <code>script.js</code>.</p>
+            <p>Development was incremental, with early sprints focusing on core features like setting up the Django project structure and simple search pages. Later sprints added Google Maps API integration and refined the UI.</p>
+        </div>
+
+        <div class="process-step bubble">
+            <h3>Sprint Reviews and Retrospectives</h3>
+            <p>In each sprint review, completed features were demonstrated, and feedback was incorporated into future tasks. Sprint retrospectives helped the team identify improvements, such as refining tasks or enhancing the map feature for better performance.</p>
+        </div>
+
+        <div class="process-step bubble">
+            <h3>Key Design Decisions</h3>
+            <p>Key design decisions included using Django’s ORM to define flexible restaurant models, integrating Google Maps to display locations, and ensuring a clean, user-friendly UI with <code>styles.css</code>.</p>
+            <p>The team prioritized a modular structure, keeping the codebase scalable and easy to maintain by separating concerns, like isolating map logic in <code>script.js</code> and using reusable HTML templates.</p>
+        </div>
+
+        <div class="process-step bubble">
+            <h3>Testing and Development</h3>
+            <p>Testing in <code>tests.py</code> ensured reliability, while <code>db.sqlite3</code> was used for local development. The design focused on a seamless user experience, with features like dynamic restaurant search, interactive maps, and responsive layouts.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ATL Food Finder Team</p>
+    </footer>
+
+</body>
+</html>
